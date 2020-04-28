@@ -2,7 +2,10 @@ const Sequelize = require('sequelize');
 const env = process.env.NODE_ENV || 'development';
 
 const dbConfig = require('../config/database');
+const User = require('../models/User');
 const connection = new Sequelize(dbConfig);
+
+User.init(connection);
 
 // try {
 //     connection.authenticate();

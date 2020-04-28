@@ -1,5 +1,5 @@
 node_modules
 
-.env
+dados_banco.js
 
 src/config/database.js

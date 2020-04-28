@@ -1,6 +1,5 @@
-# Estudando Node Express Sequelize
-_ FONTE: https://www.youtube.com/watch?v=X7pqcPy8gDo _
-_ FONTE: https://medium.com/@diomalta/migrations-e-seeders-no-sequelizejs-67ba3571ed0e _
+FONTE: https://www.youtube.com/watch?v=X7pqcPy8gDo
+FONTE: https://medium.com/@diomalta/migrations-e-seeders-no-sequelizejs-67ba3571ed0e
 
 ## Passos Iniciais
 - yarn init -y
@@ -11,7 +10,7 @@ _ FONTE: https://medium.com/@diomalta/migrations-e-seeders-no-sequelizejs-67ba35
 - yarn add sequelize mysql2
 - yarn add sequelize-cli -d
 
-~~ Poedemos criar models/index.js com o comando padrao > npx sequelize init: models ~~
+~~Podemos criar models/index.js com o comando padrao > npx sequelize init: models~~
 
 ## Configurações Sequelize
 
@@ -25,7 +24,9 @@ _ FONTE: https://medium.com/@diomalta/migrations-e-seeders-no-sequelizejs-67ba35
     > yarn sequelize db:migrate
     No banco será criado a tabela users + sequelizemeta, que serve para registrar as alterações
 
-## Trabalhando com modelo MVC
-    Estrutura de pastas: controllers; models; config
+## Controllers e Models
+
+- Estrutura básica da classe tabela;
+- Index do Controller (CRUD - ControllerUser)
 
 
