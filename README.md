@@ -1,6 +1,6 @@
 # Estudando Node Express Sequelize
-_FONTE: https://www.youtube.com/watch?v=X7pqcPy8gDo_
-_ FONTE: https://medium.com/@diomalta/migrations-e-seeders-no-sequelizejs-67ba3571ed0e _
+//FONTE: https://www.youtube.com/watch?v=X7pqcPy8gDo
+//FONTE: https://medium.com/@diomalta/migrations-e-seeders-no-sequelizejs-67ba3571ed0e
 
 ## Passos Iniciais
 - yarn init -y
@@ -11,7 +11,7 @@ _ FONTE: https://medium.com/@diomalta/migrations-e-seeders-no-sequelizejs-67ba35
 - yarn add sequelize mysql2
 - yarn add sequelize-cli -d
 
-~~ Poedemos criar models/index.js com o comando padrao > npx sequelize init: models ~~
+//Podemos criar models/index.js com o comando padrao > npx sequelize init: models
 
 ## Configurações Sequelize
 
