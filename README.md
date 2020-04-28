@@ -1,5 +1,5 @@
 # Estudando Node Express Sequelize
-_ FONTE: https://www.youtube.com/watch?v=X7pqcPy8gDo _
+_FONTE: https://www.youtube.com/watch?v=X7pqcPy8gDo_
 _ FONTE: https://medium.com/@diomalta/migrations-e-seeders-no-sequelizejs-67ba3571ed0e _
 
 ## Passos Iniciais
