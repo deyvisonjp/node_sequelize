@@ -1,8 +1,41 @@
 /* CRUD USER */
 
 const User = require('../models/User');
+const bcrypt = require('bcrypt');
+
 
 module.exports = {
+
+    //login
+    async login(req, res) {
+        const { password, email, islogged } = req.body;
+
+        const user = await User.findOne({ where: { email } });
+
+        if (!user.id || !bcrypt.compareSync(password, user.password)) {
+            return res.status('400').send({
+                status: ' :( ',
+                message: 'E-mail e/ou senha incorreta!'
+            });
+        }
+
+        await User.update({
+            islogged
+        }, {
+            where: {
+                id: user.id,
+            }
+        });
+
+        user.password = undefined;
+
+        return res.status(200).send({
+            status: ' ;) ',
+            message: "Usuário logado com sucesso!",
+            user
+        });
+    },
+
     //buscas
     async index(req, res) {
         const users = await User.findAll();
@@ -35,7 +68,7 @@ module.exports = {
         });
         return res.status(200).send({
             status: "OK",
-            message: "Usuário " + name + " atualizado com sucesso", 
+            message: "Usuário " + name + " atualizado com sucesso",
         })
     },
     //delete
@@ -48,7 +81,7 @@ module.exports = {
         });
         return res.status(200).send({
             status: "OK",
-            message: "Usuário DELETADO com sucesso", 
+            message: "Usuário DELETADO com sucesso",
         })
     }
 }

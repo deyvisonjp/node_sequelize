@@ -45,4 +45,7 @@
 - Estrutura básica da classe tabela;
 - Index do Controller (CRUD - ControllerUser)
 
+## Login
+- Adicionar coluna logado na tabela user
+    > yarn sequelize migration:create --name=add-islogged-column-user-table
 
